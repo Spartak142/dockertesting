@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM openjdk:11-jdk
+FROM openjdk:14-jdk
 VOLUME /tmp
  
 RUN useradd -d /home/appuser -m -s /bin/bash appuser
