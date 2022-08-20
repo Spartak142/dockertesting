@@ -49,6 +49,7 @@ jobs:
       with:
           name: latest
     - run: ls -l && pwd
+    - run: echo ${{ secrets.AWS_ACCESS_KEY_ID }}
     
     - uses: aws-actions/configure-aws-credentials@master
       with:
